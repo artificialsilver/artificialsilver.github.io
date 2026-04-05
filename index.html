@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="조은(artificialsilver) — 고려대학교 정보보호 융합전공, 금융보안연구실 학부생 연구원"
+    />
+    <title>조은 — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <div class="glow glow-1" aria-hidden="true"></div>
+    <div class="glow glow-2" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="logo" href="#">artificialsilver</a>
+      <nav class="nav" aria-label="주요 메뉴">
+        <a href="#about">소개</a>
+        <a href="#experience">경력</a>
+        <a href="#education">학력</a>
+        <a href="#skills">기술</a>
+        <a href="#projects">프로젝트</a>
+        <a href="#contact">연락</a>
+      </nav>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="mobile-nav"
+        aria-label="메뉴 열기"
+      >
+        <span></span><span></span>
+      </button>
+    </header>
+    <div id="mobile-nav" class="mobile-nav" hidden>
+      <a href="#about">소개</a>
+      <a href="#experience">경력</a>
+      <a href="#education">학력</a>
+      <a href="#skills">기술</a>
+      <a href="#projects">프로젝트</a>
+      <a href="#contact">연락</a>
+    </div>
+
+    <main>
+      <section class="hero">
+        <div class="hero-layout">
+          <div class="hero-visual reveal">
+            <img
+              class="profile-img"
+              src="/profile.jpg"
+              alt="조은 프로필 사진"
+              width="280"
+              height="280"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          <div class="hero-copy">
+            <p class="hero-eyebrow reveal">안녕하세요,</p>
+            <h1 class="hero-title reveal">
+              <span class="hero-name-row">
+                <span class="hero-name">조은</span>
+                <span
+                  class="verified-badge"
+                  title="LinkedIn 인증 프로필"
+                  aria-label="LinkedIn 인증 프로필"
+                >
+                   
+                    <circle
+                      cx="12"
+                      cy="12"
+                      r="10"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                    />
+                    <path
+                      d="M8 12l2.5 2.5L16 9"
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                </span>
+              </span>
+              <span class="hero-handle">artificialsilver</span>
+              <span class="hero-role"
+                >고려대학교 학생 · 정보보호 융합전공 · 대한민국 서울</span
+              >
+            </h1>
+            <p class="hero-lead reveal">
+              <strong>고려대학교 정보보호대학원 금융보안연구실</strong> 학부생 연구원
+            </p>
+            <div class="hero-actions reveal">
+              <a class="btn btn-primary" href="#projects">프로젝트 보기</a>
+              <a
+                class="btn btn-ghost"
+                href="https://www.linkedin.com/in/artificialsilver/"
+                rel="noopener noreferrer"
+                >LinkedIn</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section about">
+        <div class="section-head reveal">
+          <h2>소개</h2>
+          <p class="section-desc">
+          </p>
+        </div>
+        <div class="about-grid">
+          <div class="card about-card reveal">
+            <h3>한 줄 소개</h3>
+            <p>
+              <a
+                class="inline-link"
+                href="https://github.com/artificialsilver"
+                rel="noopener noreferrer"
+                >github.com/artificialsilver</a
+              >
+            </p>
+            <p class="about-follow">
+              .
+            </p>
+          </div>
+          <ul class="stats reveal">
+            <li>
+              <span class="stat-num">서울</span>
+              <span class="stat-label">대한민국</span>
+            </li>
+            <li>
+              <span class="stat-num">KUCC : 고려대학교 중앙 컴퓨터 동아리</span>
+              <span class="stat-label">동아리 · 학회</span>
+            </li>
+            <li>
+              <span class="stat-num">7+</span>
+              <span class="stat-label">공개 저장소</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="experience" class="section experience">
+        <div class="section-head reveal">
+          <h2>경력</h2> 
+        </div>
+        <ol class="timeline reveal">
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="card timeline-card">
+              <p class="timeline-period">
+                <time datetime="2026-01">2026년 1월</time> – 현재
+              </p>
+              <h3>학부생 연구원 · 인턴</h3>
+              <p class="timeline-org">
+                고려대학교 정보보호대학원 금융보안연구실
+              </p>
+              <p class="timeline-meta">대한민국 서울 · 대면 근무</p>
+            </div>
+          </li>
+          <li class="timeline-item">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="card timeline-card">
+              <p class="timeline-period">
+                <time datetime="2025-07">2025년 7월</time> –
+                <time datetime="2025-08">2025년 8월</time>
+              </p>
+              <h3>학부생 연구원 · 인턴</h3>
+              <p class="timeline-org">
+                Korea University 네트워크 및 보안 연구실
+              </p>
+              <p class="timeline-meta">대면 근무</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <section id="education" class="section education">
+        <div class="section-head reveal">
+          <h2>학력</h2> 
+        </div>
+        <div class="education-card card reveal">
+          <div class="education-main">
+            <h3>Korea University · 고려대학교</h3>
+            <p class="education-degree">학사, 정보보호 융합전공</p>
+            <p class="education-dates">
+              <time datetime="2023-03">2023년 3월</time> –
+              <time datetime="2028-02">2028년 2월</time> (예정)
+            </p>
+          </div>
+          <div class="education-extra">
+            <h4>동아리 · 학회</h4>
+            <p><strong>KUCC</strong> (고려대학교 컴퓨터 학회)</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills">
+        <div class="section-head reveal">
+          <h2>기술 스택</h2> 
+        </div>
+        <ul class="skill-tags reveal">
+          <li>Java</li>
+          <li>Python</li>
+          <li>HTML</li>
+          <li>JavaScript</li> 
+        </ul>
+      </section>
+
+      <section id="projects" class="section projects">
+        <div class="section-head reveal">
+          <h2>프로젝트</h2>
+          <p class="section-desc">
+            GitHub에 올라온 저장소 중 일부입니다. 전체 목록은 프로필에서 볼 수
+            있어요.
+          </p>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-tag">GitHub Pages</span>
+              <time datetime="2025">2025</time>
+            </div>
+            <h3>artificialsilver.github.io</h3>
+            <p>
+              GitHub Pages로 호스팅하는 개인 사이트·포트폴리오 저장소입니다.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/artificialsilver/artificialsilver.github.io"
+              rel="noopener noreferrer"
+              >저장소 →</a
+            >
+          </article>
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-tag">웹 · HTML</span>
+              <time datetime="2026">2026</time>
+            </div>
+            <h3>KU-Timetable-Solver</h3>
+            <p>
+              고려대 수업 시간표를 다루는 프로젝트입니다. HTML 기반으로
+              구성되어 있습니다.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/artificialsilver/KU-Timetable-Solver"
+              rel="noopener noreferrer"
+              >저장소 →</a
+            >
+          </article>
+          <article class="project-card reveal">
+            <div class="project-meta">
+              <span class="project-tag">Java</span>
+              <time datetime="2026">2026</time>
+            </div>
+            <h3>ascii-art-forge</h3>
+            <p>
+              Java로 만든 ASCII 아트 관련 프로젝트입니다.
+            </p>
+            <a
+              class="project-link"
+              href="https://github.com/artificialsilver/ascii-art-forge"
+              rel="noopener noreferrer"
+              >저장소 →</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <section id="contact" class="section contact">
+        <div class="contact-inner reveal">
+          <h2>연락</h2>
+          <p>
+            메일·LinkedIn·GitHub·Velog로 연락·글을 확인하실 수 있습니다.
+          </p>
+          <div class="contact-actions">
+            <a
+              class="btn btn-primary btn-lg"
+              href="mailto:s1lv3r@korea.ac.kr"
+              >s1lv3r@korea.ac.kr</a
+            >
+            <a
+              class="btn btn-ghost btn-lg"
+              href="https://www.linkedin.com/in/artificialsilver/"
+              rel="noopener noreferrer"
+              >LinkedIn 프로필</a
+            >
+            <a
+              class="btn btn-ghost btn-lg"
+              href="https://github.com/artificialsilver"
+              rel="noopener noreferrer"
+              >GitHub @artificialsilver</a
+            >
+            <a
+              class="btn btn-ghost btn-lg"
+              href="https://velog.io/@s1lv3r/posts"
+              rel="noopener noreferrer"
+              >Velog @s1lv3r</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> 조은 · artificialsilver</p>
+      <div class="footer-links">
+        <a href="https://github.com/artificialsilver" rel="noopener noreferrer"
+          >GitHub</a
+        >
+        <a
+          href="https://www.linkedin.com/in/artificialsilver/"
+          rel="noopener noreferrer"
+          >LinkedIn</a
+        >
+        <a href="https://velog.io/@s1lv3r/posts" rel="noopener noreferrer"
+          >Velog</a
+        >
+      </div>
+    </footer>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
