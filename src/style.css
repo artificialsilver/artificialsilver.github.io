@@ -29,13 +29,28 @@ body {
   margin: 0;
   color: var(--text);
   font-family: var(--font-mono);
+  background: var(--bg);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -2;
+  background-image: url("./macos-big-sur-apple-layers-fluidic-colorful-wwdc-stock-3840x2160-1455.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
   background:
-    linear-gradient(rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
-    radial-gradient(circle at 24% 18%, rgba(156, 255, 203, 0.12), transparent 28rem),
-    radial-gradient(circle at 74% 72%, rgba(138, 180, 255, 0.1), transparent 30rem),
-    var(--bg);
-  background-size: 28px 28px, 28px 28px, auto, auto, auto;
+    linear-gradient(rgba(8, 9, 12, 0.18), rgba(8, 9, 12, 0.42)),
+    radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.28) 100%);
 }
 
 button,
