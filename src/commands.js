@@ -1,11 +1,11 @@
 export const profile = {
-  user: "silver",
-  host: "portfolio",
+  system: "silversystem",
   path: "~",
+  reservedUsers: ["root", "silver"],
   bootLines: [
     "booting artificialsilver.dev...",
-    "loading tiny terminal portfolio...",
-    "type 'help' to begin.",
+    "loading silversystem login shell...",
+    "enter your name to continue.",
   ],
 };
 
@@ -20,8 +20,10 @@ export const commandEntries = [
       "  about       short introduction",
       "  skills      languages and tools",
       "  projects    selected projects",
+      "  papers      paper list",
       "  contact     contact links",
       "  whoami      print current identity",
+      "  logout      return to login prompt",
       "  clear       clear terminal",
     ],
   },
@@ -31,19 +33,15 @@ export const commandEntries = [
     output: [
       "조은 / artificialsilver",
       "",
-      "고려대학교에서 정보보호를 공부하고 있습니다.",
-      "보안, 금융 시스템, 웹 프로젝트에 관심이 있습니다.",
+      "고려대학교에서 정보보호를 공부하고 있습니다."
     ],
   },
   {
     name: "skills",
     description: "기술 스택을 출력합니다.",
     output: [
-      "languages:",
-      "  Java, Python, JavaScript, HTML, CSS",
-      "",
-      "interests:",
-      "  security, web, finance security, tiny useful tools",
+      "저는 할 줄 아는 게 없어요!",
+      "I don't know how to do anything"
     ],
   },
   {
@@ -57,9 +55,6 @@ export const commandEntries = [
       "",
       "  KU-Timetable-Solver",
       "    timetable helper project",
-      "",
-      "  ascii-art-forge",
-      "    ASCII art project written in Java",
     ],
   },
   {
@@ -73,9 +68,24 @@ export const commandEntries = [
     ],
   },
   {
+    name: "papers",
+    description: "논문 목록을 출력합니다.",
+    output: [
+      "papers:",
+      "",
+      "  한국정보보호학회 2026 하계학술대회",
+      "    EIP-7702 스폰서 기반 위임 철회 메커니즘 설계",
+    ],
+  },
+  {
     name: "whoami",
     description: "현재 사용자를 출력합니다.",
-    output: ["silver"],
+    output: ["{user}@{system}"],
+  },
+  {
+    name: "logout",
+    description: "로그인 화면으로 돌아갑니다.",
+    output: ["logging out {user}..."],
   },
 ];
 

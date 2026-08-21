@@ -47,10 +47,7 @@ body::after {
   content: "";
   position: fixed;
   inset: 0;
-  z-index: -1;
-  background:
-    linear-gradient(rgba(8, 9, 12, 0.18), rgba(8, 9, 12, 0.42)),
-    radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.28) 100%);
+  z-index: -1; 
 }
 
 button,
